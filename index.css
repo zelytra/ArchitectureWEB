@@ -1,0 +1,272 @@
+html, body {
+    height: 100%;
+    background-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    text-decoration: none;
+}
+
+header #headerContact {
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+header #headerContact .left-side {
+    width: auto;
+}
+
+header #headerContact .right-side {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+}
+
+header #headerContact .left-side img {
+    width: 80px;
+    margin-left: 25px;
+}
+
+header #headerContact .right-side img {
+    width: 30px;
+    margin-right: 25px;
+}
+
+header #headerContact .right-side .phone p {
+    font-size: 15px;
+    margin-right: 20px;
+    white-space: nowrap;
+
+}
+
+header #headerContact .right-side .social {
+    display: flex;
+    align-items: center;
+}
+
+header #headerContact .right-side .menu {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+}
+
+header #headerContact .right-side .menu p {
+    margin-right: 5px;
+}
+
+main #slider {
+    margin-top: 25px;
+}
+
+main #slider img {
+    width: 1600px;
+    height: 800px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+main #content1 {
+    display: flex;
+    flex-direction: row;
+    max-width: 1400px;
+    max-height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+main #content1 .left-side {
+    width: 50%;
+}
+
+main #content1 .left-side h3 {
+    font-size: 20px;
+    color: #c9dd24;
+}
+
+main #content1 .left-side h2 {
+    font-size: 50px;
+}
+
+main #content1 .left-side p {
+    font-size: 15px;
+}
+
+main #content1 .left-side .experience {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+main #content1 .left-side .experience h1 {
+    font-size: 85px;
+    z-index: 2;
+    font-weight: bold;
+}
+
+main #content1 .left-side .experience p {
+    font-size: 20px;
+    width: 60px;
+}
+
+main #content1 .left-side .experience svg {
+    position: absolute;
+    fill: transparent;
+    stroke: #c9dd24;
+    stroke-width: 5;
+    z-index: 1;
+}
+
+main #content1 .right-side {
+    width: 50%;
+}
+
+main #content1 .right-side img[alt*="house"] {
+    position: relative;
+    z-index: 2;
+    margin-left: 10%;
+}
+
+main #content1 .right-side img[alt*="grid"] {
+    position: absolute;
+    z-index: 1;
+    width: 400px;
+    margin-top: 300px;
+}
+
+main #content2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+main #content2 .title{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    align-items: center;
+}
+main #content2 .title .selector{
+    display: flex;
+    flex-direction: row;
+}
+main #content2 .title .text h1{
+    font-size: 50px;
+}
+main #content2 .title .selector p{
+    margin-right: 50px;
+}
+
+main #content2 .list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main #content2 .block {
+    position: relative;
+    transition-duration: 200ms;
+}
+
+main #content2 .block h2 {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    margin-left: 10px;
+    font-weight: bold;
+    width: 100px;
+    top: 40%;
+    transition-duration: 200ms;
+}
+
+main #content2 .block h3 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    margin-left: 10px;
+    font-weight: bold;
+    top: 570px;
+    transition-duration: 200ms;
+}
+
+main #content2 .block p {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    margin-left: 10px;
+    font-weight: bold;
+    top: 280px;
+    opacity: 0%;
+    transition-duration: 200ms;
+}
+
+main #content2 .block:hover p {
+    opacity: 100%;
+    transition-duration: 200ms;
+}
+
+main #content2 .block:hover img {
+    opacity: 25%;
+    transition-duration: 200ms;
+}
+
+main #content2 .block:hover h2 {
+    color: black;
+    top: 10px;
+    transition-duration: 200ms;
+}
+
+main #content2 .block:hover h3 {
+    color: black;
+    transition-duration: 200ms;
+}
+
+main #content2 .block:hover {
+    background-color: #c9dd24;
+}
+
+main #content3{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    width: 100%;
+}
+main #content3 .list{
+    display: flex;
+    flex-direction: row;
+}
+
+main #content3 svg{
+    fill: transparent;
+    stroke: #c9dd24;
+    stroke-width: 5;
+    z-index: 1;
+}
+
+
+footer{
+    margin-top: 50px;
+    background-color: black;
+    height: 300px;
+}
+
+
