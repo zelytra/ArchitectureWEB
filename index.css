@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Poppins";
+    src: url('Poppins-Thin.ttf') format('truetype');
+}
+
 html, body {
     height: 100%;
     background-color: #ffffff;
@@ -10,7 +15,7 @@ html, body {
     text-decoration: none;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-device-width: 800px) {
     header #headerContact {
         height: 100px;
         overflow: hidden;
@@ -349,7 +354,7 @@ html, body {
         justify-content: space-evenly;
     }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-device-width: 800px) {
     header #headerContact {
         height: 100px;
         overflow: hidden;
@@ -420,11 +425,11 @@ html, body {
         display: flex;
         flex-direction: column;
         margin-top: 20px;
-
     }
 
     main #content1 .left-side {
-        width: 50%;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
     main #content1 .left-side h3 {
@@ -469,6 +474,9 @@ html, body {
     }
 
     main #content1 .right-side {
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
         width: 50%;
     }
 
@@ -489,14 +497,14 @@ html, body {
         display: flex;
         flex-direction: column;
         margin-top: 150px;
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     main #content2 .title {
         display: flex;
         justify-content: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
         margin-bottom: 50px;
         align-items: center;
     }
@@ -507,17 +515,18 @@ html, body {
     }
 
     main #content2 .title .text h1 {
-        font-size: 50px;
+        font-size: 30px;
     }
 
     main #content2 .title .selector p {
-        margin-right: 50px;
+        margin-right: 15px;
+        font-size: 10px;
     }
 
     main #content2 .list {
         width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: space-between;
     }
@@ -590,19 +599,23 @@ html, body {
         margin-top: 150px;
         margin-left: auto;
         margin-right: auto;
-        width: 1200px;
     }
 
     main #content3 .title {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     main #content3 .list {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     main #content3 .block {
@@ -610,6 +623,8 @@ html, body {
         flex-direction: row;
         width: 300px;
         height: 300px;
+        margin-bottom: 25px;
+
     }
 
     main #content3 svg {
@@ -649,7 +664,6 @@ html, body {
     footer {
         margin-top: 50px;
         width: 100%;
-        height: 300px;
     }
 
     footer svg {
@@ -663,25 +677,32 @@ html, body {
 
     footer #credit {
         display: flex;
-        justify-content: space-evenly;
-        flex-direction: row;
-        margin-top: 50px;
+        flex-direction: column;
+        margin-top: 25px;
+    }
+    footer #credit .block {
+        margin-top: 25px;
+        text-align: center;
     }
 
     footer img[alt*=logo] {
-        width: 150px;
-        height: 150px;
-
+        width: 50px;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     footer img[alt*=social] {
         width: 25px;
         height: 25px;
+        margin-bottom: 10px;
     }
 
     footer #credit .socialBlock {
-        width: 150px;
+        width: 200px;
         display: flex;
+        margin-left: auto;
+        margin-right: auto;
         justify-content: space-evenly;
     }
 }
