@@ -69,17 +69,37 @@ html, body {
         margin-right: 5px;
     }
 
-    main #slider {
-        margin-top: 25px;
+    #slider {
+        position: relative;
+        width: 1200px;
+        overflow: hidden;
+        margin: auto;
+        display: flex;
+        align-items: center;
     }
 
-    main #slider img {
-        width: 1600px;
-        height: 800px;
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
+    #previous,
+    #next {
+        cursor: pointer;
+        transition: opacity 0.3s ease;
+        opacity: 0;
+        position: absolute;
+        font-size: 100px;
+        color: rgba(220, 220, 220, 0.8);
+        padding: 10px;
+    }
 
+    #previous {
+        left: 0;
+    }
+
+    #next {
+        right: 0;
+    }
+
+    #slider:hover #previous,
+    #slider:hover #next {
+        opacity: 1;
     }
 
     main #content1 {
@@ -408,11 +428,11 @@ html, body {
         margin-right: 5px;
     }
 
-    main #slider {
+    main #sliderContent {
         margin-top: 25px;
     }
 
-    main #slider img {
+    main #sliderContent img {
         width: 500px;
         height: 300px;
         display: block;
